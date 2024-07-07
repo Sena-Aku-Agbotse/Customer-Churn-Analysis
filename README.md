@@ -11,47 +11,32 @@ Second Data Set: The next 2000 records are available on OneDrive in an Excel fil
 
 Third Data Set: The final portion of the data, comprising 2000 records, is hosted on this GitHub Repository in a CSV file named "LP2_Telco-churn-last-2000.csv". Additional information about the dataset's features and context can also be found in this repository.
 
-**Data Understanding**
-The following describes the columns present in the data.
 
-Gender -- Whether the customer is a male or a female
+**Project Workflow**
+Data Collection: Customer data was collected from various sources, including SQL Server tables and CSV/Excel files, covering demographics, services, payment, and churn status.
 
-SeniorCitizen -- Whether a customer is a senior citizen or not
+Data Processing: Collected data was transformed into a suitable format using libraries like pyodbc and pandas, creating a comprehensive dataset.
 
-Partner -- Whether the customer has a partner or not (Yes, No)
+Exploratory Data Analysis (EDA): Extensive EDA was performed, including data summarization, handling missing values, and univariate and bivariate analyses, using pandas, numpy, matplotlib, and seaborn.
 
-Dependents -- Whether the customer has dependents or not (Yes, No)
+Data Preprocessing: Data was cleaned, missing values handled, and categorical variables transformed, making it ready for in-depth analysis with pandas.
 
-Tenure -- Number of months the customer has stayed with the company
+Hypothesis Testing: Hypotheses on customer churn were formulated and tested using various statistical methods, including scipy's hypothesis tests.
 
-Phone Service -- Whether the customer has a phone service or not (Yes, No)
+Visual Insights: Compelling visualizations were created to answer analytical questions about customer churn.
 
-MultipleLines -- Whether the customer has multiple lines or not
+Data Balancing: Class imbalance was addressed using the SMOTETomek technique.
 
-InternetService -- Customer's internet service provider (DSL, Fiber Optic, No)
+Model Training and Evaluation: Multiple machine learning models were trained, evaluated, and assessed, using classification reports with F1-score as the evaluation metric.
 
-OnlineSecurity -- Whether the customer has online security or not (Yes, No, No Internet)
+Model Fine-Tuning: The best-performing model was fine-tuned as needed.
 
-OnlineBackup -- Whether the customer has online backup or not (Yes, No, No Internet)
+Advanced Model Improvement: Hyperparameter tuning was performed for selected models using GridSearchCV.
 
-DeviceProtection -- Whether the customer has device protection or not (Yes, No, No internet service)
+Future Predictions: The trained model can be deployed for ongoing predictions on new data, allowing proactive measures for customer retention.
 
-TechSupport -- Whether the customer has tech support or not (Yes, No, No internet)
+Power BI Deployment: Analysis and visuals were deployed in Power BI for interactive exploration and sharing.
 
-StreamingTV -- Whether the customer has streaming TV or not (Yes, No, No internet service)
 
-StreamingMovies -- Whether the customer has streaming movies or not (Yes, No, No Internet service)
-
-Contract -- The contract term of the customer (Month-to-Month, One year, Two years)
-
-PaperlessBilling -- Whether the customer has paperless billing or not (Yes, No)
-
-Payment Method -- The customer's payment method (Electronic check, mailed check, Bank transfer(automatic), Credit card(automatic))
-
-MonthlyCharges -- The amount charged to the customer monthly
-
-TotalCharges -- The total amount charged to the customer
-
-Churn -- Whether the customer churned or not (Yes or No)
-
-After exploration, questions were derived for further analysis and were thoroughly answered. Some target strategies were also provided to enhance customer loyalty and encourage customer retention.
+**Conclusion**
+Through a combination of data preprocessing, feature engineering, and model training, we successfully built a model that achieved a good accuracy score. This indicates our model's ability to effectively differentiate between loyal customers and those at risk of churning. This information can help businesses take proactive measures to retain customers and improve customer satisfaction.
